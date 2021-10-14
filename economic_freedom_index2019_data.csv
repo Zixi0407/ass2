@@ -1,4 +1,4 @@
-CountryID,Country,WEBNAME,Region,World Rank,Region Rank,2019Score,Property Rights,Judical Effectiveness,Government Integrity,Tax Burden,Gov't Spending,Fiscal Health,BusinessFreedom,LaborFreedom,Monetary Freedom,Trade Freedom,Investment Freedom ,Financial Freedom,Tariff Rate (%),Income Tax Rate (%),Corporate Tax Rate (%),Tax Burden % of GDP,Gov't Expenditure % of GDP ,Country,Population,"GDP (Billions, PPP)",GDP Growth Rate (%),5 Year GDP Growth Rate (%),GDP per Capita (PPP),Unemployment (%),Inflation (%),FDI Inflow (Millions),Public Debt (% of GDP)
+CountryID,Country,WEBNAME,Region,World Rank,Region Rank,Score,Property Rights,Judical Effectiveness,Government Integrity,Tax Burden,Gov't Spending,Fiscal Health,BusinessFreedom,LaborFreedom,Monetary Freedom,Trade Freedom,Investment Freedom ,Financial Freedom,Tariff Rate (%),Income Tax Rate (%),Corporate Tax Rate (%),Tax Burden % of GDP,Gov't Expenditure % of GDP ,Country,Population,"GDP (Billions, PPP)",GDP Growth Rate (%),5 Year GDP Growth Rate (%),GDP per Capita (PPP),Unemployment (%),Inflation (%),FDI Inflow (Millions),Public Debt (% of GDP)
 1,Afghanistan,Afghanistan,Asia-Pacific,152,39,51.5,19.6,29.6,25.2,91.7,80.3,99.3,49.2,60.4,76.7,66,10,10,7,20,20,5,25.6,Afghanistan,35.5,69.6,2.5,2.9,"$1,958",8.8,5,53.9,7.3
 2,Albania,Albania,Europe,52,27,66.5,54.8,30.6,40.4,86.3,73.9,80.6,69.3,52.7,81.5,87.8,70,70,1.1,23,15,24.9,29.5,Albania,2.9,36,3.9,2.5,"$12,507",13.9,2,"1,119.10",71.2
 3,Algeria,Algeria,Middle East and North Africa,171,14,46.2,31.6,36.2,28.9,76.4,48.7,18.7,61.6,49.9,74.9,67.4,30,30,8.8,35,23,24.5,41.4,Algeria,41.5,632.9,2,3.1,"$15,237",10,5.6,"1,203.00",25.8
@@ -41,7 +41,7 @@ CountryID,Country,WEBNAME,Region,World Rank,Region Rank,2019Score,Property Right
 39,Costa Rica,CostaRica,Americas,61,11,65.3,58.3,54,54.5,79.2,88.4,42.5,67.2,55.2,83.2,81.4,70,50,1.8,25,30,23.6,19.6,Costa Rica,5,83.9,3.2,3.4,"$16,877",8.1,1.6,"3,007.10",49.1
 41,Croatia,Croatia,Europe,86,38,61.4,66,42.9,38.6,66.4,33.4,85.4,60.7,44,78.5,86,75,60,2,40,18,37.9,47.1,Croatia,4.1,101.3,2.8,1.5,"$24,424",11.2,1.1,"2,104.20",78.4
 42,Cuba,Cuba,Americas,178,31,27.8,31.6,10,37.7,48.8,0,15.6,20,20,65.6,64,10,10,8,50,30,41.5,64.2,Cuba,11.5,148,0.9,1.9,"$12,920",2.6,5.5,N/A,47.7
-40,C™te d'Ivoire,CoeDivoire,Sub-Saharan Africa,78,5,62.4,40.9,47.8,38.1,77.5,83.9,74.3,61,52.5,74.2,73.6,75,50,8.2,36,25,18.2,23.1,Côte d'Ivoire,25,96.9,7.8,8.6,"$3,883",2.6,0.8,674.7,46.4
+40,Câ„¢te d'Ivoire,CoeDivoire,Sub-Saharan Africa,78,5,62.4,40.9,47.8,38.1,77.5,83.9,74.3,61,52.5,74.2,73.6,75,50,8.2,36,25,18.2,23.1,CÃ´te d'Ivoire,25,96.9,7.8,8.6,"$3,883",2.6,0.8,674.7,46.4
 43,Cyprus,Cyprus,Europe,44,22,68.1,73.1,48.1,43.7,74.9,55.2,80.3,76.9,59.5,84,86,75,60,2,35,12.5,33.6,38.7,Cyprus,0.9,31.6,3.9,0.3,"$37,023",11,0.7,"6,343.30",99.3
 44,Czech Republic,CzechRepublic,Europe,23,13,73.7,74.8,47.6,52.1,82.6,52.1,97.6,72.4,78.1,81.5,86,80,80,2,15,19,34,40,Czech Republic,10.6,375.7,4.3,2.9,"$35,512",2.9,2.4,"7,412.20",34.7
 45,Denmark,Denmark,Europe,14,6,76.7,86.2,77.8,85.8,42,14.4,96.7,90.7,86.4,84.1,86,90,80,2,56,23.5,45.9,53.4,Denmark,5.7,286.8,2.1,1.6,"$49,883",5.7,1.1,"-3,114.70",36.4
@@ -135,7 +135,7 @@ CountryID,Country,WEBNAME,Region,World Rank,Region Rank,2019Score,Property Right
 135,Romania,Romania,Europe,42,21,68.6,66.7,51.9,39.8,89.7,69,89.3,63.1,64.5,82.7,86,70,50,2,10,16,26,32.1,Romania,19.6,481.5,7,4.5,"$24,508",4.9,1.3,"5,160.00",36.9
 136,Russia,Russia,Europe,98,41,58.9,52.4,45.1,36.6,89.4,62.3,86.6,78.4,52.5,65.1,77.8,30,30,3.6,13,20,22.2,35.4,Russia,144,"4,007.80",1.5,0.3,"$27,834",5.2,3.7,"25,284.00",17.4
 137,Rwanda,Rwanda,Sub-Saharan Africa,32,2,71.1,72.2,83.2,67.9,79.8,79.4,86.3,56.2,82.2,76.1,70.4,60,40,7.3,30,30,15,26.2,Rwanda,11.8,24.6,6.1,6.7,"$2,080",1.3,4.8,366.2,40.6
-141,São Tomé and Príncipe,SaoTomePrincipe,Sub-Saharan Africa,134,24,54,37.4,26.6,35.5,87.2,67,62.3,65.1,42.7,70.5,64.2,60,30,10.4,20,25,15.9,33.2,São Tomé and Príncipe,0.2,0.7,4,4.1,"$3,180",13.5,5.5,41,83.3
+141,SÃ£o TomÃ© and PrÃ­ncipe,SaoTomePrincipe,Sub-Saharan Africa,134,24,54,37.4,26.6,35.5,87.2,67,62.3,65.1,42.7,70.5,64.2,60,30,10.4,20,25,15.9,33.2,SÃ£o TomÃ© and PrÃ­ncipe,0.2,0.7,4,4.1,"$3,180",13.5,5.5,41,83.3
 138,Saint Lucia,SaintLucia,Americas,38,4,68.7,65.9,63.8,50.3,76.2,79.3,81.3,76.3,69.2,83.9,73.2,65,40,5.9,30,30,24,26.3,Saint Lucia,0.2,2.5,3,1.9,"$14,450",21,0.1,92.4,71.3
 139,Saint Vincent and the Grenadines,SaintVincentGrenadines,Americas,55,10,65.8,36.5,63.8,50.5,71.2,74.3,85,76.5,73.5,82.2,66.6,70,40,9.2,32.5,33,27.1,29.3,Saint Vincent and the Grenadines,0.1,1.3,1,1.1,"$11,491",18.3,2,87.1,80.8
 140,Samoa,Samoa,Asia-Pacific,82,19,62.2,53.8,31,37.7,79.9,62.3,93.6,77,78.2,83.5,63.8,55,30,10.6,27,27,23.6,35.5,Samoa,0.2,1.1,2.4,2.1,"$5,740",8.2,1.3,9,49.1
