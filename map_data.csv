@@ -3,7 +3,7 @@ Afghanistan,51.5
 Albania,66.5
 Algeria,46.2
 Angola,50.6
-Antarctica,N/A
+Antarctica,0
 Argentina,52.2
 Armenia,67.7
 Australia,80.9
@@ -44,7 +44,7 @@ Croatia,61.4
 Cuba,27.8
 Cyprus,68.1
 Czech Republic,73.7
-Czechia,N/A
+Czechia,0
 Dem. Rep. Congo,50.3
 Den+A45mark,76.7
 Djibouti,47.1
@@ -58,10 +58,10 @@ Eritrea,38.9
 Estonia,76.6
 eSwatini,54.7
 Ethiopia,53.6
-Falkland Islands,N/A
+Falkland Islands,0
 Fiji,62.2
 Finland,74.9
-French Southern and Antarctic Lands,N/A
+French Southern and Antarctic Lands,0
 France,63.8
 Gabon,56.3
 Gambia,52.4
@@ -69,7 +69,7 @@ Georgia,75.9
 Germany,73.5
 Ghana,57.5
 Greece,57.7
-Greenland,N/A
+Greenland,0
 Guatemala,62.6
 Guinea,55.7
 Guinea-Bissau,54
@@ -82,7 +82,7 @@ Iceland,77.1
 India,55.2
 Indonesia,65.8
 Iran,51.1
-Iraq,N/A
+Iraq,0
 Ireland,80.5
 Israel,72.8
 Italy,62.2
@@ -100,13 +100,13 @@ Latvia,70.4
 Lebanon,51.1
 Lesotho,53.1
 Liberia,49.7
-Libya,N/A
+Libya,0
 Lithuania,74.2
 Luxembourg,75.9
 Macau,71
 Macedonia,71.1
 Madagascar,56.6
-Mail,N/A
+Mail,0
 Malawi,51.4
 Malaysia,74
 Maldives,53.2
@@ -121,11 +121,11 @@ Mongolia,55.4
 Montenegro,60.5
 Morocco,62.9
 Mozambique,48.6
-Myanmar,N/A
+Myanmar,0
 Namibia,58.7
 Nepal,53.8
 Netherlands,76.8
-New Caledonia,N/A
+New Caledonia,0
 New Zealand,84.4
 Nicaragua,57.7
 Niger,51.6
@@ -133,7 +133,7 @@ Nigeria,57.3
 Norway,73
 Oman,61
 Pakistan,55
-Palestine,N/A
+Palestine,0
 Panama,67.2
 Papua New Guinea,58.4
 Paraguay,61.8
@@ -141,12 +141,12 @@ Peru,67.8
 Philippines,63.8
 Poland,67.8
 Portugal,65.3
-Puerto Rico,N/A
+Puerto Rico,0
 Qatar,72.6
 Romania,68.6
 Russia,58.9
 Rwanda,71.1
-S. Sudan,N/A
+S. Sudan,0
 São Tomé and Príncipe,54
 Saint Lucia,68.7
 Saint Vincent and the Grenadines,65.8
@@ -160,8 +160,8 @@ Singapore,89.4
 Slovakia,65
 Slovenia,65.5
 Solomon Islands,54.6
-Somalia,N/A
-Somaliland,N/A
+Somalia,0
+Somaliland,0
 South Africa,58.3
 South Korea,72.3
 Spain,65.7
@@ -170,7 +170,7 @@ Sudan,47.7
 Suriname,48.1
 Sweden,75.2
 Switzerland,81.9
-Syria,N/A
+Syria,0
 Taiwan ,77.3
 Tajikistan,55.6
 Tanzania,60.2
@@ -192,8 +192,8 @@ Uzbekistan,53.3
 Vanuatu,56.4
 Venezuela,25.9
 Vietnam,55.3
-Western Sahara,N/A
-Yemen,N/A
+Western Sahara,0
+Yemen,0
 Zambia,53.6
 Zimbabwe,40.4
-Northern Cyprus,N/A
+Northern Cyprus,0
