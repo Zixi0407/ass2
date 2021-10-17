@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+     "width": 625,
+  "height": 300,
+  "params": [
+    {
+      "name": "Score_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "name": "Countries with Score above: "
+      }
+    },
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Asia-Pacific",
+            "Europe",
+            "Middle East and North Africa",
+            "Sub-Saharan Africa",
+            "Americas"
+        ],
+        "labels": [
+          "Show All",
+          "Asia-Pacific",
+            "Europe",
+            "Middle East and North Africa",
+            "Sub-Saharan Africa",
+            "Americas"
+        ],
+        "name": "Region Selection: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/Zixi0407/3179_testrepo/main/economic_freedom_index2019_data.csv"},
+  "transform": [
+    {"filter": "datum.TradeFreedom > 0"},
+    {"filter": "datum.BusinessFreedom > 0"},
+    {"filter": "datum.Score > Score_Above"},
+    {
+      "filter": "Continent_selection == null || datum.Region == Continent_selection"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "TradeFreedom",
+      "type": "quantitative",
+      "title": "Trade Freedom",
+      "axis": {"tickCount": 10},
+      "scale": {"type": "linear", "domain": [0, 100]}
+    },
+    "y": {
+      "field": "BusinessFreedom",
+      "type": "quantitative",
+      "title":"Business Freedom",
+      "axis": {"tickCount": 10},
+      "scale": {"type": "linear", "domain": [0, 100]}
+    }
+  },
+  "layer": [
+    {
+      "selection": {
+        "continent_highlight": {
+          "type": "multi",
+          "fields": ["Region"],
+          "bind": "legend"
+        }
+      },
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "Score",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [20,40,50,55,60,65,70,80,90],
+            "range": [10, 30, 60, 110, 140, 200,300,380,450,520]
+          },
+          "legend": {"format": ".1s"}
+        },
+        "color": {
+          "field": "Region",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+            "Asia-Pacific",
+            "Europe",
+            "Middle East and North Africa",
+            "Sub-Saharan Africa",
+            "Americas"
+            ],
+            "range": [
+              "#e41a1c",
+              "#984ea3",
+              "#ff7f00",
+              "#a6cee3",
+              "#377eb8",
+              "#a65628"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {"selection": "continent_highlight", "value": 0.7},
+          "value": 0.05
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "TradeFreedom", "type": "quantitative", "format": ","},
+          {"field": "BusinessFreedom", "type": "quantitative", "format": ","},
+          
+          {
+            "field": "Score",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Country", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Country'] == 'Venezuela' || datum['Country'] == 'Cuba' || datum['Country'] == 'Hong Kong SAR' || datum['Country'] == 'Singapore'",
+            
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "TradeFreedom", "type": "quantitative", "format": ","},
+          {"field": "BusinessFreedom", "type": "quantitative", "format": ","},
+          
+          {
+            "field": "Score",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ]
+}

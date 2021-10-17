@@ -1,0 +1,137 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+       "width": 299,
+    "height": 260,
+    "params": [
+      {
+        "name": "Country_selection",
+        "value":"Global average",
+        "bind": {
+          "input": "select",
+          "options": [
+            "Global average",
+            "HongKong",
+              "Singapore",
+              "New Zealand",
+              "Switzerland",
+              "Australia",
+              "Ireland"
+          ],
+          "labels": [
+              "Global average",
+              "HongKong",
+              "Singapore",
+              "New Zealand",
+              "Switzerland",
+              "Australia",
+              "Ireland"
+          ],
+          "name": "Country Selection: "
+        }
+      }
+    ], "data": {
+      "values": 
+       [{"a": "Prop. Rights", "b":53.2,"c":"Global average"},
+        {"a": "J. Effectiveness", "b": 45.8,"c":"Global average"}, 
+        {"a": "Gov't Integrity", "b": 42.3,"c":"Global average"}, 
+        {"a": "Tax Burden", "b": 77.6,"c":"Global average"}, 
+        {"a": "Gov't Spending", "b": 64.9,"c":"Global average"}, 
+        {"a": "Fiscal Health", "b": 67.3,"c":"Global average"}, 
+        {"a": "Bus. Freedom", "b": 64.4,"c":"Global average"}, 
+        {"a": "Labor Freedom", "b": 59.9,"c":"Global average"}, 
+        {"a": "Mon. Freedom", "b": 75.8,"c":"Global average"}, 
+        {"a": "Trade Freedom", "b": 74.8,"c":"Global average"}, 
+        {"a": "Inv. Freedom", "b": 58.1,"c":"Global average"}, 
+        {"a": "Fin. Freedom", "b": 48.9,"c":"Global average"},
+        {"a": "Prop. Rights", "b":93.3,"c":"HongKong"},
+        {"a": "J. Effectiveness", "b": 75.3,"c":"HongKong"}, 
+        {"a": "Gov't Integrity", "b": 83.8,"c":"HongKong"}, 
+        {"a": "Tax Burden", "b": 93.1,"c":"HongKong"}, 
+        {"a": "Gov't Spending", "b": 90.3,"c":"HongKong"}, 
+        {"a": "Fiscal Health", "b": 100,"c":"HongKong"}, 
+        {"a": "Bus. Freedom", "b": 96.4,"c":"HongKong"}, 
+        {"a": "Labor Freedom", "b": 89.2,"c":"HongKong"}, 
+        {"a": "Mon. Freedom", "b": 86.4,"c":"HongKong"}, 
+        {"a": "Trade Freedom", "b": 95,"c":"HongKong"}, 
+        {"a": "Inv. Freedom", "b": 90,"c":"HongKong"}, 
+        {"a": "Fin. Freedom", "b": 90,"c":"HongKong"},
+        {"a": "Prop. Rights", "b":97.4,"c":"Singapore"},
+        {"a": "J. Effectiveness", "b": 92.4,"c":"Singapore"}, 
+        {"a": "Gov't Integrity", "b": 95.1,"c":"Singapore"}, 
+        {"a": "Tax Burden", "b": 90.4,"c":"Singapore"}, 
+        {"a": "Gov't Spending", "b": 90.7,"c":"Singapore"}, 
+        {"a": "Fiscal Health", "b": 80,"c":"Singapore"}, 
+        {"a": "Bus. Freedom", "b": 90.8,"c":"Singapore"}, 
+        {"a": "Labor Freedom", "b": 91,"c":"Singapore"}, 
+        {"a": "Mon. Freedom", "b": 85.3,"c":"Singapore"}, 
+        {"a": "Trade Freedom", "b": 94.8,"c":"Singapore"}, 
+        {"a": "Inv. Freedom", "b": 85,"c":"Singapore"}, 
+        {"a": "Fin. Freedom", "b": 80,"c":"Singapore"},
+        {"a": "Prop. Rights", "b":95,"c":"New Zealand"},
+        {"a": "J. Effectiveness", "b": 83.5,"c":"New Zealand"}, 
+        {"a": "Gov't Integrity", "b": 96.7,"c":"New Zealand"}, 
+        {"a": "Tax Burden", "b": 71,"c":"New Zealand"}, 
+        {"a": "Gov't Spending", "b": 50.4,"c":"New Zealand"}, 
+        {"a": "Fiscal Health", "b": 98.6,"c":"New Zealand"}, 
+        {"a": "Bus. Freedom", "b": 91,"c":"New Zealand"}, 
+        {"a": "Labor Freedom", "b": 86.7,"c":"New Zealand"}, 
+        {"a": "Mon. Freedom", "b": 87.5,"c":"New Zealand"}, 
+        {"a": "Trade Freedom", "b": 92.4,"c":"New Zealand"}, 
+        {"a": "Inv. Freedom", "b": 80,"c":"New Zealand"}, 
+        {"a": "Fin. Freedom", "b": 80,"c":"New Zealand"},
+        {"a": "Prop. Rights", "b":85.3,"c":"Switzerland"},
+        {"a": "J. Effectiveness", "b": 82,"c":"Switzerland"}, 
+        {"a": "Gov't Integrity", "b": 88,"c":"Switzerland"}, 
+        {"a": "Tax Burden", "b": 70.5,"c":"Switzerland"}, 
+        {"a": "Gov't Spending", "b": 64.8,"c":"Switzerland"}, 
+        {"a": "Fiscal Health", "b": 96.3,"c":"Switzerland"}, 
+        {"a": "Bus. Freedom", "b": 75.4,"c":"Switzerland"}, 
+        {"a": "Labor Freedom", "b": 72.5,"c":"Switzerland"}, 
+        {"a": "Mon. Freedom", "b": 85.2,"c":"Switzerland"}, 
+        {"a": "Trade Freedom", "b": 87.4,"c":"Switzerland"}, 
+        {"a": "Inv. Freedom", "b": 85,"c":"Switzerland"}, 
+        {"a": "Fin. Freedom", "b": 90,"c":"Switzerland"},
+        {"a": "Prop. Rights", "b":79.1,"c":"Australia"},
+        {"a": "J. Effectiveness", "b": 86.5,"c":"Australia"}, 
+        {"a": "Gov't Integrity", "b": 79.9,"c":"Australia"}, 
+        {"a": "Tax Burden", "b": 62.8,"c":"Australia"}, 
+        {"a": "Gov't Spending", "b": 60.1,"c":"Australia"}, 
+        {"a": "Fiscal Health", "b": 86.2,"c":"Australia"}, 
+        {"a": "Bus. Freedom", "b": 88.3,"c":"Australia"}, 
+        {"a": "Labor Freedom", "b": 84.1,"c":"Australia"}, 
+        {"a": "Mon. Freedom", "b": 86.6,"c":"Australia"}, 
+        {"a": "Trade Freedom", "b": 87.6,"c":"Australia"}, 
+        {"a": "Inv. Freedom", "b": 80,"c":"Australia"}, 
+        {"a": "Fin. Freedom", "b": 90,"c":"Australia"},
+        {"a": "Prop. Rights", "b":85.8,"c":"Ireland"},
+        {"a": "J. Effectiveness", "b": 68.4,"c":"Ireland"}, 
+        {"a": "Gov't Integrity", "b": 78,"c":"Ireland"}, 
+        {"a": "Tax Burden", "b": 76.3,"c":"Ireland"}, 
+        {"a": "Gov't Spending", "b": 77.4,"c":"Ireland"}, 
+        {"a": "Fiscal Health", "b": 89,"c":"Ireland"}, 
+        {"a": "Bus. Freedom", "b": 83.1,"c":"Ireland"}, 
+        {"a": "Labor Freedom", "b": 75.3,"c":"Ireland"}, 
+        {"a": "Mon. Freedom", "b": 87,"c":"Ireland"}, 
+        {"a": "Trade Freedom", "b": 86,"c":"Ireland"}, 
+        {"a": "Inv. Freedom", "b": 90,"c":"Ireland"}, 
+        {"a": "Fin. Freedom", "b": 70,"c":"Ireland"}
+      ]
+    },
+    "transform":[{ "filter": "datum.c == Country_selection"
+  }],
+  "encoding": {
+      "y": {"field": "a", "type": "nominal","title":null},
+      "x": {"field": "b", "type": "quantitative", "title":"Score","scale":{"domain":[0,110]}}},
+    "layer":[{
+    "mark": "bar"},
+    {
+      "mark":{
+        "type":"text",
+        "align":"left",
+        "baseline":"middle"
+      },
+      "encoding":{"text":{"field":"b","type":"quantitative"}}
+    
+    
+    }
+      ]}
