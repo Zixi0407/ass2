@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {"url": "https://raw.githubusercontent.com/Zixi0407/ass2/main/stacked_used.json"},
+    "width": 630, "height": 250,
+    "resolve": {"scale": {"color": "independent"}},
+    "layer": [
+       {"mark": "bar",
+        "encoding": {
+          "x": {"aggregate": "sum", "field": "yield", "type": "quantitative", "stack": "zero"},
+          "y": {"field": "variety", "type": "nominal"},
+          "color": {"field": "site", "type": "nominal","scale": {
+              "domain": [
+              "Rule of Law",
+              "Government Size",
+              "Regulatory efficiency",
+              "Open Market"
+              ],
+              "range": [
+                "#ffffcc",
+                "#225ea8",
+                "#a1dab4",
+                "#41b6c4"
+              ]
+            }}}
+       },
+       {"mark": {"type": "text", "dx": -15, "dy": 3},
+        "encoding": {
+          "x": {"aggregate": "sum", "field": "yield", "type": "quantitative", "stack": "zero","title":"Score"},
+          "y": {"field": "variety", "type": "nominal","title":null, "scale": {
+          "domain": ["Hong Kong", 
+            "Singapore", 
+            "New Zealand", 
+            "Switzerland",
+            "Australia", 
+            "Ireland"
+          ]
+        }},
+          "text": {"aggregate": "sum", "field": "yield", "type": "quantitative", "format": ".1f"}}
+      }
+    
+  ]}

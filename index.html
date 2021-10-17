@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Visualisations | An Example</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+
+</head>
+<body>
+  <header>
+    <h2>THE ECONOMIC FREEDOM INDEX</h2>
+  </header>
+
+ <div class="page">
+
+   <!-- pure grid group -->
+    
+      <div class="pure-u-1-1">
+        <h2>What are economic freedom and the economic freedom index?</h2>
+        <p>Economic freedom is the basic right of people to control their own labour and property. In an economically free society, people there are free, and government allow capital and goods to move freely. The economic freedom index is a measurement of economic freedom level. The higher index, the more economic freedom that place is. </p>
+      <br>
+        <hr>
+    </div>
+  <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+    <div class="pure-u-2-3">
+      <div id="vis7" class="vis-container"></div>
+    </div>
+ 
+        <div class="pure-u-1-3">
+          <div class="description description-right">
+            <h2>Map of the economic freedom index</h2>
+            <h4>About the map </h4>
+            <p>This map shows the location of each country, and the colour on the map shows The economic freedom index in 2019. From the legend beside, we can see that the darker the colour is, the higher the score is.</p>
+            <h4>Top values</h4>
+            <p>From the map, it is seen that some of the countries are obvious that have high scores. For example, Australia, the United States of America, Chile, Canada and so on. </p>
+            <h4>Empty values</h4>
+            <p>Another thing to notice is that there is some 'grey' location on the map. The reason why is that, someplace they do not have the value in the dataset, so just leave these locations as grey.</p>
+          </div>
+        </div>
+        
+    <!-- end pure grid group -->
+
+
+<!-- pure grid group -->
+
+  <div class="pure-u-1-1">
+    <br>
+    <br>
+    <br>
+
+        <hr>
+    <h2>The economic freedom index in each region</h2>
+    <p>In this section, we have two graphs to show some information about the economic freedom index in each region. We have five regions in total: Asia-Pacific, Europe, Middle East and North Africa, Sub-Saharan Africa and Americas.</p>
+    <p>The bubble chart shows the region by colour, and use the size of circles to show the score. Moreover, it uses the x-axis to show trade freedom and uses the y-axis to show business freedom. The line chart shows the economic freedom index change over time. There are 6 lines, one of them is the global average, and the rest are the top economic entity in each region. There are interaction sections below both of the graphs to select different variables.</p>
+
+</div>
+<!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-2-3">
+        
+        <div id="vis5"  class="vis-container"></div>
+      </div>
+
+
+      <div class="pure-u-1-3">
+        <div id="vis8"  class="vis-container"></div>
+      </div>
+    
+    </div>
+    
+    <!-- end pure grid group -->
+
+<!-- pure grid group -->
+
+<div class="pure-u-1-1">
+  <br>
+  <br>
+  <br>
+        <hr>
+  <h2>Top 3 economic entities in the economic freedom index with GDP and Population</h2>
+
+</div>
+<!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g"></div>
+    
+    <div class="pure-u-1-3">
+      <img src="new.jpg" alt="HTML5 Icon" style="width:450px;height:276px;">
+
+    </div>
+
+
+    
+        <div class="pure-u-1-3">
+          <div id="vis6"  class="vis-container"></div>
+        </div>
+
+        <div class="pure-u-1-3">
+          <div class="description description-right">
+            <h2>Relationship with GDP & population</h2>
+            <p>Economic freedom brings greater prosperity. In economic GDP is an important measurement to measure prosperity and the population is also important for the labour force. However, from the isotype chart, we can see that there is no significant relationship between population or GDP with the economic freedom index.</p>
+            <p>The reason why is that GDP is not the only measurement, instead, if we add population in the calculation. There is another measurement GDP per capita. It is a better measurement to measure the people's living standard and prosperity.</p>
+        
+      
+    </div>
+  </div>
+    <!-- end pure grid group -->
+<!-- pure grid group -->
+
+<div class="pure-u-1-1">
+  <br>
+  <br>
+  <br>
+  <hr>
+  <h2>Top 6 economic entities and the factors</h2>
+  <p>The following three graphs show different information about the top 6 economic entities.</p>
+
+</div>
+<!-- end pure grid group -->
+    
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+          
+          <table border = '2' cellpadding = '12%'>
+            <tr>
+              <th>Economic Entity</th>
+              <th>Region</th>
+              <th>Score</th>
+              <th>Rank</th>
+             </tr>
+   
+             <tr>
+               <th>Hong Kong</th>
+               <th>Asia-Pacific</th>
+               <th>90.2</th>
+               <th>1</th>
+              </tr>
+   
+              <tr>
+               <th>Singapore</th>
+               <th>Asia-Pacific</th>
+               <th>89.4</th>
+               <th>2</th>
+              </tr>
+   
+              <tr>
+               <th>New Zealand</th>
+               <th>Asia-Pacific</th>
+               <th>84.4</th>
+               <th>3</th>
+              </tr>
+   
+              <tr>
+               <th>Switzerland</th>
+               <th>Europe</th>
+               <th>81.9</th>
+               <th>4</th>
+              </tr>
+   
+              <tr>
+               <th>Australia</th>
+               <th>Asia-Pacific</th>
+               <th>80.9</th>
+               <th>5</th>
+              </tr>
+   
+              <tr>
+               <th>Ireland</th>
+               <th>Europe</th>
+               <th>80.5</th>
+               <th>6</th>
+              </tr>
+            </table>
+            </div>
+          </body>
+   
+
+
+      <div class="pure-u-1-3">
+        <div id="vis9"  class="vis-container"></div>
+      </div>
+
+      <div class="pure-u-1-3">
+        <div class="description description-right">
+          <h2>The table and the bar chart</h2>
+          <p>The table layout the 6 top economic entities, with the name, entity, and score. </p>
+          <p>The bar chart shows the 12 factors: Property rights, Government Integrity, Judicial effectiveness, Government Spending, Tax burden, Fiscal health, Business freedom, Labour freedom, Monetary freedom, trade freedom, investment freedom and financial freedom. Aso, the global average is shown as a reference. The y-axis shows the 12 factors and the x-axis shows the values.</p>
+          <p>There is an interaction section below the chart, you can select different countries to see the values of the factors.</p>
+        </div>
+    
+    </div>
+    
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g"></div>
+    
+    <div class="pure-u-2-3">
+      <br>
+      <div id="vis10"  class="vis-container"></div>
+    </div>
+
+        <div class="pure-u-1-3">
+          <div class="description description-right">
+            <br>
+            <h2>The stacked bar chart</h2>
+            <p>The 12 factors are mentioned in the last graph. Among these 12 factors, it can be divided into 4 pillars: Rule of Law (property right, government integrity, judicial effectiveness), Government Size (government spending, tax burden, fiscal health), Regulatory Efficiency (business freedom, labour freedom, monetary freedom), Open Markets (trade freedom, investment freedom, financial freedom). </p>
+            <p>The six countries have the relatively same distribution of the 4 pillars. It is understandable that being in the top 6 means have an economic freedom index larger than 80/100, which is a high score. Therefore, if any part of these 6 entities has a low score, it is impossible to get into this position.  </p>
+          </div>
+        
+      
+    </div>
+    <!-- end pure grid group -->
+  
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <br>
+        <p>@This website is create by Zixi</p>
+      </div>
+    </div>
+  
+
+  </div> <!-- end page -->
+
+   
+<script type="text/javascript">
+  var specVis1 = "./normalised-stacked-bars-responsive.json";
+  var specVis2= "./line-chart-responsive.json";
+  var specVis3= "./bubblechart.json";
+  var specVis4= "./isotype.json";
+  var specVis5= "./map.json";
+  var specVis6= "./linechart.json";
+  var specVis7= "./barchart.json";
+  var specVis8= "./stacked_graph.json"
+
+
+  vegaEmbed('#vis3', specVis1, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis4', specVis2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis5', specVis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis6', specVis4, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis7', specVis5, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis8', specVis6, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis9', specVis7, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis10', specVis8, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+</script>
+</body>
+</html>

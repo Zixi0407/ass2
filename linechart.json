@@ -1,0 +1,90 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 290,
+     "params": [
+      {
+        "name": "interpolate",
+        "value": "linear",
+        "bind": {
+          "input": "select",
+          "options": [
+            "basis",
+            "cardinal",
+            "catmull-rom",
+            "linear",
+            "monotone",
+            "natural",
+            "step",
+            "step-after",
+            "step-before"
+          ]
+        }
+      },
+  
+      {
+        "name": "strokeWidth",
+        "value": 2,
+        "bind": {"input": "range", "min": 0, "max": 10, "step": 0.5}
+      }
+        
+      
+    ],
+    "description": "Multi-series line chart with labels.",
+    "data": {"url": "https://raw.githubusercontent.com/Zixi0407/ass2/main/line_Data.csv"},
+  
+  
+  
+    "encoding": 
+    {"color": {"field": "Symbol", 
+                "type": "nominal",
+                 "scale": {
+              "domain": [
+              "HongKong",
+              "Canada",
+              "Mauritius",
+              "Switzerland",
+              "United Arab Emirates",
+              "Global_average"
+              ],
+              "range": [
+                "#e41a1c",
+                "#984ea3",
+                "#ff7f00",
+                "#a6cee3",
+                "#377eb8",
+                "#a65628"
+              ]
+            },
+  
+                "legend": null}},
+    "layer": [
+      {
+        "mark": {"type": "line",
+      "interpolate": {"expr": "interpolate"},
+  
+      "strokeWidth": {"expr": "strokeWidth"}},
+        "encoding": {
+          "x": {"field": "date", "type": "nominal", "title": "date"},
+          "y": {"field": "Score", "type": "quantitative", "title": "Score"}
+        }
+      },
+      {
+        "encoding": {
+          "x": {"aggregate": "max","field": "date", "type": "nominal"},
+          "y": {"aggregate": {"argmax": "date"},"field": "Score","type": "quantitative"
+          }
+          
+        },
+        "layer": [
+          {"mark": {"type": "circle"}},
+          {
+            "mark": {"type": "text", "align": "left", "dx": 4},
+            "encoding": {"text": {"field": "Symbol", "type": "nominal"}}
+          }
+        ]
+      }
+    ],
+    "config": {"view": {"stroke": null}}
+  }
+  
